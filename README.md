@@ -1,10 +1,45 @@
 # **Abilitare la Scrittura sulla Partizione SHARE di Batocera 42 in Linux Mint**  
 # **Enable Write Access to Batocera 42 SHARE Partition on Linux Mint**
 
-![Status](https://img.shields.io/badge/status-stable-brightgreen)  
-![Linux](https://img.shields.io/badge/Linux-Mint-87CF3E?logo=linuxmint&logoColor=white)  
-![Batocera](https://img.shields.io/badge/Batocera-42-blue)  
+![Status](https://img.shields.io/badge/status-stable-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-Mint-87CF3E?logo=linuxmint&logoColor=white)
+![Batocera](https://img.shields.io/badge/Batocera-42-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Made with Markdown](https://img.shields.io/badge/Made%20with-Markdown-000000?logo=markdown)
+![Platform Linux](https://img.shields.io/badge/Platform-Linux-1793D1?logo=linux&logoColor=white)
+![Shell Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Retro Gaming](https://img.shields.io/badge/Retro-Gaming-orange)
+![Batocera Compatible](https://img.shields.io/badge/Batocera-Compatible-blue)
+![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-blue)
+![Docs Included](https://img.shields.io/badge/Docs-Included-success)
+![Languages](https://img.shields.io/badge/Languages-IT%20%7C%20EN-blue)
+![Author WiildBoy](https://img.shields.io/badge/Author-WiildBoy-red)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/WiildBoy/batocera-share-write-access?style=flat&color=yellow)
+![GitHub forks](https://img.shields.io/github/forks/WiildBoy/batocera-share-write-access?style=flat&color=lightblue)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=WiildBoy.batocera-share-write-access)
+![Last Commit](https://img.shields.io/github/last-commit/WiildBoy/batocera-share-write-access)
+![Repo Size](https://img.shields.io/github/repo-size/WiildBoy/batocera-share-write-access)
+![Languages](https://img.shields.io/github/languages/top/WiildBoy/batocera-share-write-access)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/WiildBoy/batocera-share-write-access)
+
+
+![Status](https://img.shields.io/badge/status-stable-brightgreen)
+![Linux](https://img.shields.io/badge/Linux-Mint-87CF3E?logo=linuxmint&logoColor=white)
+![Batocera](https://img.shields.io/badge/Batocera-42-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Made with Markdown](https://img.shields.io/badge/Made%20with-Markdown-000000?logo=markdown)
+![Platform Linux](https://img.shields.io/badge/Platform-Linux-1793D1?logo=linux&logoColor=white)
+![Shell Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Retro Gaming](https://img.shields.io/badge/Retro-Gaming-orange)
+![Batocera Compatible](https://img.shields.io/badge/Batocera-Compatible-blue)
+![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-blue)
+![Docs Included](https://img.shields.io/badge/Docs-Included-success)
+![Languages](https://img.shields.io/badge/Languages-IT%20%7C%20EN-blue)
+![Author WiildBoy](https://img.shields.io/badge/Author-WiildBoy-red)
+
 
 ---
 
