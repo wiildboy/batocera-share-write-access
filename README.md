@@ -85,30 +85,25 @@ Linux Mint monterà automaticamente le partizioni.
 
 ## **4. Verifica che SHARE sia montata**
 
-bash
-mount | grep sda2
+`mount | grep sda2`
 
 Dovresti vedere qualcosa tipo:
 
-bash
 /dev/sda2 on /media/alex/SHARE type ext4 (...)
 
 ## 5. Abilita la scrittura con ACL
 
 Sostituisci alex con il tuo nome utente Mint:
 
-bash
-sudo setfacl -R -m u:alex:rwx /media/alex/SHARE
+`sudo setfacl -R -m u:alex:rwx /media/alex/SHARE`
 
 ## 6. Rendi i permessi permanenti
 
-bash
-sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE
+`sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE`
 
 ## 7. Test rapido
 
-bash
-touch /media/alex/SHARE/testfile
+`touch /media/alex/SHARE/testfile`
 
 Se non ricevi errori, la scrittura è abilitata.
 
@@ -128,35 +123,36 @@ The best solution is to use ACLs (Access Control Lists), which allow adding perm
 
 ACLs allow you to:
 
-    grant extra permissions to your Mint user
-    avoid modifying Batocera’s original permissions
-    maintain full compatibility
-    work even if you change USB ports
-    make permissions persistent for new files
+- grant extra permissions to your Mint user
+- avoid modifying Batocera’s original permissions
+- maintain full compatibility
+- work even if you change USB ports
+- make permissions persistent for new files
 
 ## 3 Insert the USB stick
-
 Plug the Batocera USB stick into your computer.
 Linux Mint will automatically mount the partitions.
 
 ## 4 Check if SHARE is mounted
 
-mount | grep sda2
+`mount | grep sda2`
+
 Expected output:
 /dev/sda2 on /media/alex/SHARE type ext4 (...)
 
 ## 5 Enable write access using ACL
 
 Replace alex with your Mint username:
-sudo setfacl -R -m u:alex:rwx /media/alex/SHARE
+
+`sudo setfacl -R -m u:alex:rwx /media/alex/SHARE`
 
 ## 6 Make permissions persistent
 
-sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE
+`sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE`
 
 ## 7 Quick test
 
-touch /media/alex/SHARE/testfile
+`touch /media/alex/SHARE/testfile`
 
 If no errors appear, write access is enabled.
 
