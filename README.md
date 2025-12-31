@@ -32,7 +32,7 @@
 
 # **📚 Indice / Table of Contents**
 
-- [🇮🇹 Guida Italiana](#-guida-italiana)
+- [🇮🇹 Guida Italiana](#guida-italiana)
   - **1. Introduzione**
   - **2. Perché usare le ACL**
   - **3. Inserisci la chiavetta USB**
@@ -41,7 +41,7 @@
   - **6. Rendi i permessi permanenti**
   - **7. Test rapido**
   - **8. Conclusione**
-- [🇬🇧 English Guide](#-english-guide)
+- [🇬🇧 English Guide](#english-guide)
   - **1. Introduction**
   - **2. Why ACLs**
   - **3. Insert the USB stick**
@@ -110,7 +110,9 @@ Se non ricevi errori, la scrittura è abilitata.
 Con due semplici comandi puoi finalmente leggere e scrivere nella partizione SHARE di Batocera 42 da Linux Mint, in modo sicuro e permanente.
 Questa guida è pensata per essere semplice, chiara e adatta anche ai principianti.
 
-## English Guide
+---
+
+## 🇬🇧 English Guide
 
 ## 1 Introduction
 
