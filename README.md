@@ -90,7 +90,55 @@ touch /media/alex/SHARE/testfile
 
 Se non ricevi errori, la scrittura è abilitata.
 
-## 8. Conclusione
-
 Con due semplici comandi puoi finalmente leggere e scrivere nella partizione SHARE di Batocera 42 da Linux Mint, in modo sicuro e permanente.
 Questa guida è pensata per essere semplice, chiara e adatta anche ai principianti.
+
+## English Guide
+
+## 1 Introduction
+
+If you use Batocera 42 on a USB stick and manage your files from Linux Mint, you may see the SHARE partition but be unable to write to it.
+This happens because Batocera applies strict permissions.
+
+The best solution is to use ACLs (Access Control Lists), which allow adding permissions without modifying the original ones.
+
+## 2 Why ACLs
+
+ACLs allow you to:
+
+    grant extra permissions to your Mint user
+    avoid modifying Batocera’s original permissions
+    maintain full compatibility
+    work even if you change USB ports
+    make permissions persistent for new files
+
+## 3 Insert the USB stick
+
+Plug the Batocera USB stick into your computer.
+Linux Mint will automatically mount the partitions.
+
+## 4 Check if SHARE is mounted
+
+mount | grep sda2
+Expected output:
+/dev/sda2 on /media/alex/SHARE type ext4 (...)
+
+## 5 Enable write access using ACL
+
+Replace alex with your Mint username:
+sudo setfacl -R -m u:alex:rwx /media/alex/SHARE
+
+## 6 Make permissions persistent
+
+sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE
+
+## 7 Quick test
+
+touch /media/alex/SHARE/testfile
+
+If no errors appear, write access is enabled.
+
+## 8. Conclusion
+
+With just two commands, you can safely and permanently enable write access to the Batocera 42 SHARE partition from Linux Mint.
+This guide is designed to be simple, clear, and beginner-friendly.
