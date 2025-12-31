@@ -63,12 +63,15 @@ Linux Mint monterà automaticamente le partizioni.
 ---
 
 ## 2 Verifica che SHARE sia montata
-
+````markdown
 ```bash
 mount | grep sda2
 
+````markdown
 Dovresti vedere qualcosa tipo:
+```
 /dev/sda2 on /media/alex/SHARE type ext4 (...)
+```
 
 ## 3 Abilita la scrittura con ACL
 
