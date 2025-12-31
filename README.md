@@ -52,7 +52,7 @@
   - **8. Conclusion**
 
 ---
-
+<a id="guida-italiana"></a>
 # 🇮🇹 **Guida Italiana**
 
 ## **1. Introduzione**
@@ -112,6 +112,7 @@ Questa guida è pensata per essere semplice, chiara e adatta anche ai principian
 
 ---
 
+<a id="english-guide"></a>
 ## 🇬🇧 English Guide
 
 ## 1 Introduction
