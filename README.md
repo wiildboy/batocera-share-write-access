@@ -1,40 +1,39 @@
-# Abilitare la Scrittura sulla Partizione SHARE di Batocera 42 in Linux Mint  
-# Enable Write Access to Batocera 42 SHARE Partition on Linux Mint
+# **Abilitare la Scrittura sulla Partizione SHARE di Batocera 42 in Linux Mint**  
+# **Enable Write Access to Batocera 42 SHARE Partition on Linux Mint**
 
-![Status](https://img.shields.io/badge/status-stable-brightgreen)
-![Linux](https://img.shields.io/badge/Linux-Mint-87CF3E?logo=linuxmint&logoColor=white)
-![Batocera](https://img.shields.io/badge/Batocera-42-blue)
+![Status](https://img.shields.io/badge/status-stable-brightgreen)  
+![Linux](https://img.shields.io/badge/Linux-Mint-87CF3E?logo=linuxmint&logoColor=white)  
+![Batocera](https://img.shields.io/badge/Batocera-42-blue)  
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
-# 📚 Indice / Table of Contents
+# **📚 Indice / Table of Contents**
 
 - [🇮🇹 Guida Italiana](#-guida-italiana)
-  - [Introduzione](#introduzione)
-  - [Perché usare le ACL](#perché-usare-le-acl)
-  - [1 Inserisci la chiavetta USB](#1-inserisci-la-chiavetta-usb)
-  - [2 Verifica che SHARE sia montata](#2-verifica-che-share-sia-montata)
-  - [3 Abilita la scrittura con ACL](#3-abilita-la-scrittura-con-acl)
-  - [4 Rendi i permessi permanenti](#4-rendi-i-permessi-permanenti)
-  - [5 Test rapido](#5-test-rapido)
-  - [Conclusione](#conclusione)
-
+  - **1. Introduzione**
+  - **2. Perché usare le ACL**
+  - **3. Inserisci la chiavetta USB**
+  - **4. Verifica che SHARE sia montata**
+  - **5. Abilita la scrittura con ACL**
+  - **6. Rendi i permessi permanenti**
+  - **7. Test rapido**
+  - **8. Conclusione**
 - [🇬🇧 English Guide](#-english-guide)
-  - [Introduction](#introduction)
-  - [Why ACLs](#why-acls)
-  - [1 Insert the USB stick](#1-insert-the-usb-stick)
-  - [2 Check if SHARE is mounted](#2-check-if-share-is-mounted)
-  - [3 Enable write access using ACL](#3-enable-write-access-using-acl)
-  - [4 Make permissions persistent](#4-make-permissions-persistent)
-  - [5 Quick test](#5-quick-test)
-  - [Conclusion](#conclusion-1)
+  - **1. Introduction**
+  - **2. Why ACLs**
+  - **3. Insert the USB stick**
+  - **4. Check if SHARE is mounted**
+  - **5. Enable write access using ACL**
+  - **6. Make permissions persistent**
+  - **7. Quick test**
+  - **8. Conclusion**
 
 ---
 
-# 🇮🇹 Guida Italiana
+# 🇮🇹 **Guida Italiana**
 
-## Introduzione
+## **1. Introduzione**
 
 Se utilizzi **Batocera 42** su una chiavetta USB e lavori su **Linux Mint**, potresti vedere la partizione **SHARE** ma non riuscire a scriverci.  
 Questo accade perché Batocera imposta permessi molto restrittivi.
@@ -43,7 +42,7 @@ La soluzione migliore è usare le **ACL (Access Control List)**, che permettono 
 
 ---
 
-## Perché usare le ACL
+## **2. Perché usare le ACL**
 
 Le ACL permettono di:
 
@@ -55,39 +54,43 @@ Le ACL permettono di:
 
 ---
 
-## 1 Inserisci la chiavetta USB
+## **3. Inserisci la chiavetta USB**
 
 Collega la chiavetta Batocera al PC.  
 Linux Mint monterà automaticamente le partizioni.
 
 ---
 
-## 2 Verifica che SHARE sia montata
-````markdown
-```bash
+## **4. Verifica che SHARE sia montata**
+
+bash
 mount | grep sda2
 
-````markdown
 Dovresti vedere qualcosa tipo:
-```
-/dev/sda2 on /media/alex/SHARE type ext4 (...)
-```
 
-## 3 Abilita la scrittura con ACL
+bash
+/dev/sda2 on /media/alex/SHARE type ext4 (...)
+
+## 5. Abilita la scrittura con ACL
 
 Sostituisci alex con il tuo nome utente Mint:
+
+bash
 sudo setfacl -R -m u:alex:rwx /media/alex/SHARE
 
-## 4 Rendi i permessi permanenti
+## 6. Rendi i permessi permanenti
 
+bash
 sudo setfacl -R -m d:u:alex:rwx /media/alex/SHARE
 
-## 5 Test rapido
+## 7. Test rapido
+
+bash
 touch /media/alex/SHARE/testfile
 
 Se non ricevi errori, la scrittura è abilitata.
 
-#Conclusione
+## 8. Conclusione
 
 Con due semplici comandi puoi finalmente leggere e scrivere nella partizione SHARE di Batocera 42 da Linux Mint, in modo sicuro e permanente.
 Questa guida è pensata per essere semplice, chiara e adatta anche ai principianti.
