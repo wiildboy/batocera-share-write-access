@@ -85,11 +85,20 @@ Linux Mint monterà automaticamente le partizioni.
 
 ## **4. Verifica che SHARE sia montata**
 
-`mount | grep sda2`
+`mount | grep SHARE`
 
 Dovresti vedere qualcosa tipo:
 
 /dev/sda2 on /media/alex/SHARE type ext4 (...)
+
+Nota: Il dispositivo potrebbe essere diverso da sda2 (ad esempio sdb2, sdc2, ecc.) 
+a seconda di quanti dischi/USB hai collegato. L'importante è che vedi "SHARE" nel risultato.
+
+Se non vedi nulla, verifica quale dispositivo corrisponde alla partizione SHARE con:
+
+`lsblk -o NAME,LABEL,SIZE,FSTYPE,MOUNTPOINT`
+
+Cerca la riga con LABEL "SHARE" e annota il dispositivo (es. sdb2).
 
 ## 5. Abilita la scrittura con ACL
 
@@ -138,10 +147,21 @@ Linux Mint will automatically mount the partitions.
 
 ## 4 Check if SHARE is mounted
 
-`mount | grep sda2`
+`mount | grep SHARE`
 
-Expected output:
+You should see something like:
+
 /dev/sda2 on /media/alex/SHARE type ext4 (...)
+
+Note: The device might be different from sda2 (e.g., sdb2, sdc2, etc.) 
+depending on how many disks/USB drives you have connected. The important thing is that you see "SHARE" in the output.
+
+If you don't see anything, check which device corresponds to the SHARE partition with:
+
+`lsblk -o NAME,LABEL,SIZE,FSTYPE,MOUNTPOINT`
+
+Look for the row with LABEL "SHARE" and note the device (e.g., sdb2).
+
 
 ## 5 Enable write access using ACL
 
